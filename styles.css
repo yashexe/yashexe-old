@@ -3,9 +3,76 @@ html{
     width: 100%;
     margin: 0;
     padding: 0;
-    
-    background: radial-gradient(circle at bottom,#17132b 0%, #090a0f 100%);
+    /*background: radial-gradient(circle at bottom,#17132b 0%, #090a0f 100%);
+*/
+    background:#0e0b1a;
 }
+body{
+    color: white;
+    font-family: Tahoma;
+}
+nav h1{
+
+    display: inline-block;
+    text-align: left;
+    font-size: 75px;
+    margin-left: 2.5%;
+    margin-top: 1%;
+}
+nav ul{
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 575px;
+}
+nav li{
+    display: inline-block;
+    margin-right: 75px;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+.word{
+    position: absolute;
+    font-size: 50px;
+    left: 50%;
+    top: 25%;
+ 
+    display: inline-block;
+    font-weight: 600;
+}
+.word span:before{
+    content: '';
+    animation: disappear 50s infinite;
+}
+#AboutMe{
+    position: absolute;
+    font-size: 25px;
+    font: 25px;
+    top: 35%;
+    left: 50%;
+    text-indent: 30px;
+    line-height: 40px;
+    margin-right: 10%;
+}
+#ContactMe{
+    text-align: center;
+    margin-top: 1%;
+    font-size: 50px;
+    font-weight: bold;
+}
+#Contacts{
+    margin-top: 5%;
+    margin-left: 32.5%;
+}
+#Contacts li{
+    font-size: 25px;
+    font-weight: bold;
+
+    display: inline-block;
+    margin-right: 10%;
+}
+/*CSS Grid*/
 #content{
     display: grid;
     width: 100%;
@@ -16,35 +83,35 @@ html{
 
     position: relative;
 }
-
 nav{
-    background: #3bbced;
-    opacity: 0.1;
+    position: relative;    
+    grid-column:1/21;
+    grid-row: 1/2;
+}
+#navigation{
+    background: #000000;
+    opacity: 0.3;
     
     grid-column:1/21;
     grid-row: 1/2;
 }
-
 #About{
-    background: #3bbced;
-    opacity: 0.1;
+
+    position: relative;
 
     grid-column: 1/21;
     grid-row: 2/9;
 }
 #Projects{
-    background: #3bbced;
+
     opacity: 0.1;
 
     grid-column: 1/21;
     grid-row: 9/16;
 }
 #Contact{
-    background: #3bbced;
-    opacity: 0.1;
-
     grid-column: 1/21;
-    grid-row: 16/20;
+    grid-row: 16/19;
 }
 #grid{
     display: grid;
@@ -60,21 +127,15 @@ nav{
     padding: 0;
     display: none;
 }
-/*
-#grid p{
-    border: 1px solid;
-    background: #000;
-    margin: 0;
-    opacity: 0.2;
-}*/
 
+/*Stars Animation*/
 #stars1{
     width: 1px;
     height: 1px;
     background: transparent;
     opacity: 0.6;
     animation: StarAnimation 60s linear infinite;
-    box-shadow: 779px 314px #fff, 1858px 1543px #fff, 73px 1507px #fff, 1693px 975px #fff,
+    box-shadow: 779px 314px #fff, 1858px 1543px #dfff, 73px 1507px #fff, 1693px 975px #fff,
     1683px 108px #fff, 1768px 1654px #fff, 654px 14px #fff, 494px 171px #fff,
     1689px 1895px #fff, 1660px 263px #fff, 1031px 903px #fff, 1203px 1393px #fff,
     1333px 1421px #fff, 1113px 41px #fff, 1206px 1645px #fff, 1325px 1635px #fff,
@@ -608,4 +669,39 @@ nav{
         transform: translateY(-2000px);
     }
     
+}
+@keyframes disappear {
+    0%{
+        content: 'Hello!';
+    }
+    11%{
+        content: 'Bounjour!';
+    }
+    22%{
+        content: 'नमस्ते!';
+    }
+    33%{
+        content: 'Guten Tag!';
+    }
+    44%{
+        content: 'Hola!';
+    }
+    55%{
+        content: '你好!';
+    }
+    66%{
+        content: 'કેમ છો!';
+    }
+    77%{
+        content: 'ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ!';
+    }
+    88%{
+        content: 'السَّلَامُ عَلَيْكُمْ!';
+    }
+    99%{
+        content: 'Hallo!';
+    }
+    100%{
+        content: 'Hello!';
+    }
 }
