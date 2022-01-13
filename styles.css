@@ -3,8 +3,6 @@ html{
     width: 100%;
     margin: 0;
     padding: 0;
-    /*background: radial-gradient(circle at bottom,#17132b 0%, #090a0f 100%);
-*/
     background:#0e0b1a;
 }
 body{
@@ -43,7 +41,7 @@ li a{
 }
 .word span:before{
     content: '';
-    animation: disappear 40s infinite;
+    animation: disappear 50s infinite;
 }
 #AboutMe{
     position: absolute;
@@ -54,6 +52,39 @@ li a{
     text-indent: 30px;
     line-height: 40px;
     margin-right: 10%;
+}
+#About img{
+    transform: scaleX(-1);
+    width: 400px;
+    height: 532px;
+    border-radius: 30%;
+    margin-top: 100px;
+    margin-left: 300px;
+    
+    border: solid 10px rgb(6, 36, 34);
+
+}
+#ThisSite h1{
+    position: absolute;
+    font-size: 40px;
+    margin-left: 43.5%;
+    margin-top: 8%;
+}
+#ThisSite img{
+    position: absolute;
+    width: 200px;
+    height: 208px;
+    margin-top: 10%;
+    margin-left: 45%;
+}
+#ThisSite p{
+    position: absolute;
+    font-size: 25px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 20%;
+    text-indent: 30px;
+    line-height: 40px;
 }
 #ContactMe{
     text-align: center;
@@ -72,6 +103,7 @@ li a{
     display: inline-block;
     margin-right: 10%;
 }
+
 /*CSS Grid*/
 #content{
     display: grid;
@@ -100,18 +132,17 @@ nav{
     position: relative;
 
     grid-column: 1/21;
-    grid-row: 2/9;
+    grid-row: 2/11;
 }
 #Projects{
-
-    opacity: 0.1;
-
+    position: relative;
     grid-column: 1/21;
-    grid-row: 9/16;
+    grid-row: 11/21;
 }
 #Contact{
+    position: relative;
     grid-column: 1/21;
-    grid-row: 16/19;
+    grid-row: 21/24;
 }
 #grid{
     display: grid;
@@ -661,7 +692,6 @@ nav{
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
 
-
 @keyframes StarAnimation {
     from{
         transform: translateY(0px);
@@ -673,36 +703,36 @@ nav{
 }
 @keyframes disappear {
     0%{
-        content: 'Hello!';
+        content: 'Hello!👋';
     }
     11%{
-        content: 'Bounjour!';
+        content: 'Bounjour!👋';
     }
     22%{
-        content: 'नमस्ते!';
+        content: 'नमस्ते!👋';
     }
     33%{
-        content: 'Guten Tag!';
+        content: 'Guten Tag!👋';
     }
     44%{
-        content: 'Hola!';
+        content: 'Hola!👋';
     }
     55%{
-        content: '你好!';
+        content: '你好!👋';
     }
     66%{
-        content: 'કેમ છો!';
+        content: 'કેમ છો!👋';
     }
     77%{
-        content: 'ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ!';
+        content: 'ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ!👋';
     }
     88%{
-        content: 'السَّلَامُ عَلَيْكُمْ!';
+        content: 'السَّلَامُ عَلَيْكُمْ!👋';
     }
     99%{
-        content: 'Hallo!';
+        content: 'Hallo!👋';
     }
     100%{
-        content: 'Hello!';
+        content: 'Hello!👋';
     }
 }
