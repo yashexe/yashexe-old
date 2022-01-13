@@ -62,29 +62,29 @@ li a{
     margin-left: 300px;
     
     border: solid 10px rgb(6, 36, 34);
-
+}
+#TitleProjects{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+#ThisSite{
+    text-align: center;
+    border: 10px solid white ;
+    width: 20%;
+    border-radius: 15%;
+    margin-left: 40%;
+    margin-top: 2.5%;
 }
 #ThisSite h1{
-    position: absolute;
-    font-size: 40px;
-    margin-left: 43.5%;
-    margin-top: 8%;
+    font-size: min;
 }
 #ThisSite img{
-    position: absolute;
     width: 200px;
     height: 208px;
-    margin-top: 10%;
-    margin-left: 45%;
 }
 #ThisSite p{
-    position: absolute;
     font-size: 25px;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-top: 20%;
-    text-indent: 30px;
-    line-height: 40px;
 }
 #ContactMe{
     text-align: center;
@@ -93,7 +93,7 @@ li a{
     font-weight: bold;
 }
 #Contacts{
-    margin-top: 5%;
+    margin-top: 2.5%;
     margin-left: 32.5%;
 }
 #Contacts li{
@@ -132,17 +132,26 @@ nav{
     position: relative;
 
     grid-column: 1/21;
-    grid-row: 2/11;
+    grid-row: 2/12;
 }
 #Projects{
     position: relative;
     grid-column: 1/21;
-    grid-row: 11/21;
+    grid-row: 12/22;
 }
 #Contact{
     position: relative;
     grid-column: 1/21;
-    grid-row: 21/24;
+    grid-row: 22/24;
+    z-index: 1;
+}
+#contactbackground{
+    background: #000000;
+    opacity: 0.3;
+
+    position: relative;
+    grid-column: 1/21;
+    grid-row: 22/24;
 }
 #grid{
     display: grid;
@@ -158,6 +167,7 @@ nav{
     padding: 0;
     display: none;
 }
+
 
 /*Stars Animation*/
 #stars1{
@@ -705,7 +715,7 @@ nav{
     0%{
         content: 'Hello!👋';
     }
-    11%{
+    16%{
         content: 'Bounjour!👋';
     }
     22%{
