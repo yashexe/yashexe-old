@@ -58,8 +58,8 @@ li a{
     width: 400px;
     height: 532px;
     border-radius: 30%;
-    margin-top: 100px;
-    margin-left: 300px;
+    margin-top: 190px;
+    margin-left: 10%;
     
     border: solid 10px rgb(6, 36, 34);
 }
@@ -105,15 +105,31 @@ li a{
 }
 
 /*CSS Grid*/
-#content{
-    display: grid;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(20,1fr);
-    grid-auto-rows: minmax(100px,auto);
-    grid-gap: 5px;
+@media only screen and (min-width: 1303px) {
 
-    position: relative;
+    #content{
+        display: grid;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(20,1fr);
+        grid-auto-rows: minmax(100px,auto);
+        grid-gap: 5px;
+
+        position: relative;
+    }
+}
+@media only screen and (max-width: 1303px) {
+
+    #content{
+        display: grid;
+        width: 1303px;
+        margin: 0 auto;
+        grid-template-columns: repeat(20,1fr);
+        grid-auto-rows: minmax(100px,auto);
+        grid-gap: 5px;
+
+        position: relative;
+    }
 }
 nav{
     position: relative;    
@@ -167,7 +183,6 @@ nav{
     padding: 0;
     display: none;
 }
-
 
 /*Stars Animation*/
 #stars1{
