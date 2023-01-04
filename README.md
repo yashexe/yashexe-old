@@ -2,7 +2,7 @@
 
 [This is the portfolio website of Yash Bhavsar](http://yashexe.github.io/Yash-Bhavsar-s-Portfolio), a third year Electrical Engineering co-op student at McMaster University. The website showcases Yash's projects and provides information about him.
 
-## Technologies Used:
+## Programming Used:
 - HTML
 - CSS
 ## Features:
