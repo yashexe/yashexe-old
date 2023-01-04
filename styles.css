@@ -4,6 +4,7 @@ html{
     margin: 0;
     padding: 0;
     background:#0e0b1a;
+    scroll-behavior: smooth;
 }
 body{
     color: white;
