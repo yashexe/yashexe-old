@@ -14,24 +14,26 @@ body{
 body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
-nav h1{
-
+nav{
     display: inline-block;
-    text-align: left;
+}
+nav h1{
+    text-align: Center;
     font-size: 75px;
-    margin-left: 2.5%;
     margin-top: 1%;
 }
-nav ul{
+#Headings{
     font-size: 25px;
-    display: inline-block;
-    margin-left: 575px;
+    text-align: center; 
+    margin-left: 199px; 
+    /* margin-right: 2px; */
 }
 nav li{
     display: inline-block;
-    margin-right: 75px;
+    /* text-align: right; */
+    margin-right: 12%;
 }
-li a{
+a{
     color: white;
     text-decoration: none;
 }
@@ -85,6 +87,7 @@ li a{
     margin-right: 10%;
     margin-left: 10%;
     margin-top: 2.5%;
+    z-index: -1;
 }
 #ThisSite h1{
     font-size: min;
@@ -96,6 +99,28 @@ li a{
 #ThisSite p{
     font-size: 25px;
 }
+#ThisSite2{
+    text-align: center;
+    border: 8px solid white ;
+    width: 20%;
+    border-radius: 15%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2.5%;
+}
+#ThisSite2 h1{
+    font-size: min;
+}
+#ThisSite2 img{
+    width: 200px;
+    height: 208px;
+}
+#ThisSite2 p{
+    font-size: 25px;
+}
+#Contact{
+    display: inline-block;
+}
 #ContactMe{
     text-align: center;
     margin-top: 1%;
@@ -105,6 +130,7 @@ li a{
 #Contacts{
     margin-top: 2.5%;
     text-align: center;
+    margin-left: 200;
     
 }
 #Contacts li{
@@ -112,7 +138,7 @@ li a{
     font-weight: bold;
 
     display: inline-block;
-    margin-right: 10%;
+    margin-right: 12%;
 }
 
 /*CSS Grid*/
@@ -728,8 +754,6 @@ nav{
     16px 1650px #fff, 1021px 1075px #fff, 723px 424px #fff, 1175px 41px #fff,
     494px 1957px #fff, 1296px 431px #fff, 175px 1507px #fff, 831px 121px #fff,
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
-}
-#star{
 }
 #stars{
     padding-right: 25%;
