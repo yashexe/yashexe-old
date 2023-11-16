@@ -10,9 +10,13 @@ body{
     color: white;
     font-family: Tahoma;
 }
-/* hide scrollbar but allow scrolling */
-body::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+body::-webkit-scrollbar {     /* hide scrollbar but allow scrolling */
+    display: none; 
+}
+
+/* ----------------TITLE/NAVIGATION---------------- */
+h1 {
+    margin: 0;
 }
 nav{
     display: inline-block;
@@ -22,54 +26,62 @@ nav h1{
     font-size: 75px;
     margin-top: 1%;
 }
-#Headings{
+nav ul{
     font-size: 25px;
     text-align: center; 
     margin-left: 199px; 
-    /* margin-right: 2px; */
+
 }
-nav li{
+nav ul li{
     display: inline-block;
-    /* text-align: right; */
     margin-right: 12%;
 }
-a{
+a{                          /*Links are usually blue and underlined*/
     color: white;
     text-decoration: none;
 }
+
+/* ----------------ABOUT---------------- */
 .word{
     position: absolute;
-    font-size: 50px;
-    left: 50%;
-    top: 25%;
- 
     display: inline-block;
+
+    top: 25%;
+    left: 50%;
+
+    font-size: 50px;
     font-weight: 600;
 }
 .word span:before{
     content: '';
     animation: disappear 50s infinite;
 }
+
 #AboutMe{
     position: absolute;
-    font-size: 25px;
-    font: 25px;
+
     top: 35%;
     left: 50%;
-    text-indent: 30px;
-    line-height: 40px;
     margin-right: 10%;
+
+    font-size: 25px;
+    text-indent: 30px;
+    line-height: 35px;
 }
 #About img{
     transform: scaleX(-1);
+    
     width: 400px;
     height: 532px;
-    border-radius: 30%;
+
     margin-top: 190px;
     margin-left: 10%;
     
-    border: solid 10px rgb(6, 36, 34);
+    border-radius: 40%;
+    border: solid 8px rgb(6, 36, 34);
 }
+
+/* ----------------PROJECTS---------------- */
 #TitleProjects{
     font-size: 60px;
     font-weight: bold;
@@ -77,73 +89,51 @@ a{
 }
 #r1{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
+
+    text-align: center;
 }
 #ThisSite{
-    text-align: center;
-    border: 10px solid white ;
     width: 20%;
-    border-radius: 15%;
+
     margin-right: 10%;
     margin-left: 10%;
     margin-top: 2.5%;
-/*     z-index: -1; */
-}
-#ThisSite h1{
-    font-size: min;
+
+    border: 7.5px solid white ;
+    border-radius: 15%;
 }
 #ThisSite img{
     width: 200px;
     height: 208px;
 }
 #ThisSite p{
-    font-size: 25px;
+    font-size: 20px;
 }
-#ThisSite2{
-    text-align: center;
-    border: 8px solid white ;
-    width: 20%;
-    border-radius: 15%;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 2.5%;
-}
-#ThisSite2 h1{
-    font-size: min;
-}
-#ThisSite2 img{
-    width: 200px;
-    height: 208px;
-}
-#ThisSite2 p{
-    font-size: 25px;
-}
-#Contact{
-    display: inline-block;
-}
+/* ----------------CONTACTS---------------- */
 #ContactMe{
-    text-align: center;
     margin-top: 1%;
+
+    text-align: center;
     font-size: 50px;
     font-weight: bold;
 }
 #Contacts{
     margin-top: 2.5%;
-    text-align: center;
     margin-left: 200;
-    
+
+    text-align: center;
 }
 #Contacts li{
-    font-size: 25px;
-    font-weight: bold;
-
     display: inline-block;
     margin-right: 12%;
+
+    font-size: 25px;
+    font-weight: bold;
 }
 
-/*CSS Grid*/
+/* ----------------MEDIA SIZE---------------- */
 @media only screen and (min-width: 1303px) {
-
     #content{
         display: grid;
         width: 100%;
@@ -156,7 +146,6 @@ a{
     }
 }
 @media only screen and (max-width: 1303px) {
-
     #content{
         display: grid;
         width: 1303px;
@@ -168,6 +157,8 @@ a{
         position: relative;
     }
 }
+
+/* ----------------GRID LAYOUT---------------- */
 nav{
     position: relative;    
     grid-column:1/21;
@@ -181,9 +172,7 @@ nav{
     grid-row: 1/2;
 }
 #About{
-
     position: relative;
-
     grid-column: 1/21;
     grid-row: 2/12;
 }
@@ -221,7 +210,61 @@ nav{
     display: none;
 }
 
-/*Stars Animation*/
+@keyframes disappear {
+    0%{
+        content: 'Hello!👋';
+    }
+    16%{
+        content: 'Bounjour!👋';
+    }
+    22%{
+        content: 'नमस्ते!👋';
+    }
+    33%{
+        content: 'Guten Tag!👋';
+    }
+    44%{
+        content: 'Hola!👋';
+    }
+    55%{
+        content: '你好!👋';
+    }
+    66%{
+        content: 'કેમ છો!👋';
+    }
+    77%{
+        content: 'ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ!👋';
+    }
+    88%{
+        content: 'السَّلَامُ عَلَيْكُمْ!👋';
+    }
+    99%{
+        content: 'Hallo!👋';
+    }
+    100%{
+        content: 'Hello!👋';
+    }
+}
+
+#stars{
+    padding-right: 25%;
+    position: absolute;
+}
+#stars01{
+    padding-left: 1950px;
+    position: absolute;
+}
+
+@keyframes StarAnimation {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-2000px);
+    }
+    
+}
+
 #stars1{
     
     width: 1px;
@@ -754,58 +797,4 @@ nav{
     16px 1650px #fff, 1021px 1075px #fff, 723px 424px #fff, 1175px 41px #fff,
     494px 1957px #fff, 1296px 431px #fff, 175px 1507px #fff, 831px 121px #fff,
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
-}
-#stars{
-    padding-right: 25%;
-    position: absolute;
-}
-#stars01{
-/* margin-left: 50%; */
-padding-left: 1950px;
-position: absolute;
-}
-
-@keyframes StarAnimation {
-    from{
-        transform: translateY(0px);
-    }
-    to{
-        transform: translateY(-2000px);
-    }
-    
-}
-@keyframes disappear {
-    0%{
-        content: 'Hello!👋';
-    }
-    16%{
-        content: 'Bounjour!👋';
-    }
-    22%{
-        content: 'नमस्ते!👋';
-    }
-    33%{
-        content: 'Guten Tag!👋';
-    }
-    44%{
-        content: 'Hola!👋';
-    }
-    55%{
-        content: '你好!👋';
-    }
-    66%{
-        content: 'કેમ છો!👋';
-    }
-    77%{
-        content: 'ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ!👋';
-    }
-    88%{
-        content: 'السَّلَامُ عَلَيْكُمْ!👋';
-    }
-    99%{
-        content: 'Hallo!👋';
-    }
-    100%{
-        content: 'Hello!👋';
-    }
 }
